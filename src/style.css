@@ -1,1 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+button#generate {
+  background-color: blueviolet;
+}
