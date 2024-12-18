@@ -1,5 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
 button#generate {
   background-color: blueviolet;
+  text-align: center;
 }

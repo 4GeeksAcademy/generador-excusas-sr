@@ -1,16 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Generador de excusas</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Excuse Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrap">
+    <div class="container text-center">
       <h1>Profe no pude entregar mi proyecto porque...</h1>
-      <h1 id="excuse"></h1>
+      <h3 id="excuse"></h3>
+      <button id="generate" class="btn btn-primary">Nueva excusa</button>
     </div>
 
-    <button id="generate">Generar nueva excusa</button>
-
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
