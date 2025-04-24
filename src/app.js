@@ -17,29 +17,17 @@ window.onload = function() {
     return part[Math.floor(Math.random() * part.length)];
   }
 
-  let whoExcuse = partExcuseGenerator(who);
-  let actionExcuse = partExcuseGenerator(action);
-  let whatExcuse = partExcuseGenerator(what);
-  let whenExcuse = partExcuseGenerator(when);
-  let excuse =
-    whoExcuse + " " + actionExcuse + " " + whatExcuse + " " + whenExcuse + ".";
-
-  document.getElementById("excuse").innerText = excuse;
-
-  document.getElementById("generate").onclick = function() {
+  function generateExcuse() {
     let whoExcuse = partExcuseGenerator(who);
     let actionExcuse = partExcuseGenerator(action);
     let whatExcuse = partExcuseGenerator(what);
     let whenExcuse = partExcuseGenerator(when);
-    let excuse =
-      whoExcuse +
-      " " +
-      actionExcuse +
-      " " +
-      whatExcuse +
-      " " +
-      whenExcuse +
-      ".";
-    document.getElementById("excuse").innerText = excuse;
+    return `${whoExcuse} ${actionExcuse} ${whatExcuse} ${whenExcuse}.`;
+  }
+
+  document.getElementById("excuse").innerText = generateExcuse();
+
+  document.getElementById("generate").onclick = function() {
+    document.getElementById("excuse").innerText = generateExcuse();
   };
 };
